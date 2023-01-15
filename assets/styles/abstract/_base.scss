@@ -1,0 +1,7 @@
+@import './variaveis';
+
+body {
+    font-size: $tamanho-texto;
+    font-family: $fonte-peso;
+    font-weight: $fonte-familia;
+}
