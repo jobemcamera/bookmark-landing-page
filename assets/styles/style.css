@@ -72,4 +72,53 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.intro .intro__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.intro .intro__container .intro__banner .intro__imagem {
+  background-image: url("/assets/images/illustration-hero.svg");
+  height: 40vh;
+  width: 100vw;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.intro .intro__container .intro__info .intro__info--titulo {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.2em;
+  color: hsl(229deg, 31%, 21%);
+}
+.intro .intro__container .intro__info .intro__info--texto {
+  padding: 1em 2em;
+  line-height: 1.5em;
+  color: hsl(229deg, 8%, 60%);
+}
+.intro .intro__container .intro__info .intro__info--botoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.intro .intro__container .intro__info .intro__info--botoes .intro__info--chrome {
+  background: hsl(231deg, 69%, 60%);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px hsl(229deg, 8%, 60%);
+  color: #ffffff;
+  padding: 1em;
+  text-decoration: none;
+}
+.intro .intro__container .intro__info .intro__info--botoes .intro__info--firefox {
+  background: #f7f7f7;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px hsl(229deg, 8%, 60%);
+  color: hsl(229deg, 31%, 21%);
+  padding: 1em;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

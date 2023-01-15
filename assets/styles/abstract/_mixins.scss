@@ -1,0 +1,11 @@
+@import './variaveis';
+
+@mixin botao($corFundo, $corTexto) {
+    background: $corFundo;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px $cor-secundaria;
+    color: $corTexto;
+    padding: 1em;
+    text-decoration: none;
+}

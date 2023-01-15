@@ -1,0 +1,45 @@
+@import '../abstract/variaveis';
+@import '../abstract/mixins';
+
+.intro {
+    .intro__container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .intro__banner {
+            .intro__imagem {
+                background-image: url('/assets/images/illustration-hero.svg');
+                height: 40vh;
+                width: 100vw;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                display: inline-block;
+            }
+        }
+    .intro__info {
+        .intro__info--titulo {
+            font-size: $tamanho-texto * 2;
+            font-weight: 500;
+            line-height: 1.2em;
+            color: $cor-principal;
+        }
+        .intro__info--texto {
+            padding: 1em 2em;
+            line-height: 1.5em;
+            color: $cor-secundaria
+        }
+        .intro__info--botoes {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .intro__info--chrome {
+                @include botao($cor-fundo, $cor-terciaria);
+            }
+            .intro__info--firefox {
+                @include botao($cor-quartenaria, $cor-principal);
+            }
+        }
+    }
+    }
+}
