@@ -32,9 +32,11 @@ body {
 }
 .cabecalho__container .cabecalho__botao:checked ~ .nav {
   display: flex;
+  flex-direction: column;
 }
 .cabecalho__container .cabecalho__botao:checked ~ .cabecalho__logo {
-  background-image: url("/assets/images/logo-bookmark-white.svg");
+  background-image: url("/assets/images/logo-bookmark.svg");
+  filter: brightness(10);
 }
 .cabecalho__container .nav {
   position: absolute;
@@ -46,6 +48,7 @@ body {
   padding: 5em 0;
   height: 100vh;
   visibility: visible;
+  opacity: 0.95;
 }
 .cabecalho__container .nav .nav__lista {
   width: 80%;
@@ -72,6 +75,33 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.cabecalho__container .cabecalho__redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 15em auto 0 auto;
+}
+.cabecalho__container .cabecalho__redes .cabecalho__rede:first-of-type {
+  background-image: url("/assets/images/icon-facebook.svg");
+  height: 24px;
+  width: 24px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding: 2em 0;
+}
+.cabecalho__container .cabecalho__redes .cabecalho__rede:last-of-type {
+  background-image: url("/assets/images/icon-twitter.svg");
+  height: 24px;
+  width: 24px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding: 2em 0;
 }
 
 .intro .intro__container {

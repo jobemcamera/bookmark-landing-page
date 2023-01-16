@@ -1,4 +1,5 @@
 @import '../abstract/variaveis';
+@import '../abstract/mixins';
 
 .cabecalho__container {
     display: flex;
@@ -29,9 +30,11 @@
     }
     .cabecalho__botao:checked ~ .nav {
         display: flex;
+        flex-direction: column;
     }
     .cabecalho__botao:checked ~ .cabecalho__logo {
-        background-image: url('/assets/images/logo-bookmark-white.svg');
+        background-image: url('/assets/images/logo-bookmark.svg');
+        filter: brightness(10);
     }
     .nav {
         position: absolute;
@@ -43,6 +46,7 @@
         padding: 5em 0;
         height: 100vh;
         visibility: visible;
+        opacity: 0.95;
         .nav__lista {
             width: 80%;
             display: flex;
@@ -67,6 +71,21 @@
                     align-items: center;
                     justify-content: center;
                 }
+            }
+        }
+    }
+    .cabecalho__redes {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 50%;
+        margin: 15em auto 0 auto;
+        .cabecalho__rede {
+            &:first-of-type {
+                @include imagem('/assets/images/icon-facebook.svg', 24px, 24px);
+            }
+            &:last-of-type {
+                @include imagem('/assets/images/icon-twitter.svg', 24px, 24px);
             }
         }
     }
