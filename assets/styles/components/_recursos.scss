@@ -1,0 +1,43 @@
+@import '../abstract/variaveis';
+@import '../abstract/mixins';
+
+.recursos {
+    text-align: center;
+    padding: 4em 0;
+    .recursos__container {
+        .recursos__info {
+            .recursos__info--titulo {
+                @include titulo(1.5);
+            }
+            .recursos__info--texto {
+                @include texto();
+            }
+        }
+    .recursos__opcoes {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 1em auto 0 auto;
+        .recursos__opcao {
+            padding: 1em 0;
+            border-top: 1px solid $cor-secundaria;
+            color: $cor-principal;
+            font-size: $tamanho-texto * 1.2;
+        }
+    }
+    .recursos__conteudo {
+        .recursos__banner {
+            .recursos__imagem {
+                //background-image: url('/assets/images/illustration-features-tab-1.svg');
+                height: 30vh;
+                width: 80vw;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                display: inline-block;
+                //@include imagem('/assets/images/illustration-features-tab-1.svg', 30vh, 80vw);
+            }
+        }
+    }
+    }
+}

@@ -9,3 +9,26 @@
     padding: 1em;
     text-decoration: none;
 }
+
+@mixin titulo($multiplicador) {
+    font-size: $tamanho-texto * $multiplicador;
+    font-weight: 500;
+    line-height: 1.2em;
+    color: $cor-principal;
+}
+
+@mixin texto {
+    padding: 1em 2em;
+    line-height: 1.5em;
+    color: $cor-secundaria
+}
+
+@mixin imagem($url, $altura, $largura) {
+    background-image: url($url);
+    height: $altura;
+    width: $largura;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}

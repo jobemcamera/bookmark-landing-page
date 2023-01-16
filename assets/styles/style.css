@@ -121,4 +121,40 @@ body {
   color: hsl(229deg, 31%, 21%);
   padding: 1em;
   text-decoration: none;
+}
+
+.recursos {
+  text-align: center;
+  padding: 4em 0;
+}
+.recursos .recursos__container .recursos__info .recursos__info--titulo {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.2em;
+  color: hsl(229deg, 31%, 21%);
+}
+.recursos .recursos__container .recursos__info .recursos__info--texto {
+  padding: 1em 2em;
+  line-height: 1.5em;
+  color: hsl(229deg, 8%, 60%);
+}
+.recursos .recursos__container .recursos__opcoes {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 1em auto 0 auto;
+}
+.recursos .recursos__container .recursos__opcoes .recursos__opcao {
+  padding: 1em 0;
+  border-top: 1px solid hsl(229deg, 8%, 60%);
+  color: hsl(229deg, 31%, 21%);
+  font-size: 21.6px;
+}
+.recursos .recursos__container .recursos__conteudo .recursos__banner .recursos__imagem {
+  height: 30vh;
+  width: 80vw;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */
