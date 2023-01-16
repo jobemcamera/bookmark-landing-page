@@ -105,7 +105,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
-.intro .intro__container .intro__info .intro__info--botoes .intro__info--chrome {
+.intro .intro__container .intro__info .intro__info--botoes .intro__info--botao:first-of-type {
   background: hsl(231deg, 69%, 60%);
   border: none;
   border-radius: 5px;
@@ -114,7 +114,7 @@ body {
   padding: 1em;
   text-decoration: none;
 }
-.intro .intro__container .intro__info .intro__info--botoes .intro__info--firefox {
+.intro .intro__container .intro__info .intro__info--botoes .intro__info--botao:last-of-type {
   background: #f7f7f7;
   border: none;
   border-radius: 5px;

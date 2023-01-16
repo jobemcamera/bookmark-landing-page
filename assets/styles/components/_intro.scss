@@ -22,11 +22,13 @@
             display: flex;
             align-items: center;
             justify-content: space-evenly;
-            .intro__info--chrome {
-                @include botao($cor-fundo, $cor-terciaria);
-            }
-            .intro__info--firefox {
-                @include botao($cor-quartenaria, $cor-principal);
+            .intro__info--botao {
+                &:first-of-type {
+                    @include botao($cor-fundo, $cor-terciaria);
+                }
+                &:last-of-type {
+                    @include botao($cor-quartenaria, $cor-principal);
+                }
             }
         }
     }
