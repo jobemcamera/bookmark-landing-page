@@ -18,19 +18,36 @@
         flex-direction: column;
         width: 80%;
         margin: 1em auto 0 auto;
+        position: relative;
         .recursos__opcao {
             padding: 1em 0;
-            border-top: 1px solid $cor-secundaria;
+            border-top: 1px solid $cor-linha;
             color: $cor-principal;
             font-size: $tamanho-texto * 1;
+            &:last-of-type {
+                border-bottom: 1px solid $cor-linha;
+            }
+            &.active {
+                //content: '';
+                position: absolute;
+                border-bottom: 4px solid $cor-botao;
+                top: 0;
+                left: 25%;
+                width: 50%
+            }
         }
     }
+    
+    
     .recursos__conteudo {
         .recursos__banner {
             .recursos__imagem {
                 @include imagem('/assets/images/illustration-features-tab-1.svg', 30vh, 80vw);
             }
         }
+    .recursos__botao {
+        @include botao($cor-fundo, $cor-terciaria);
+    }
     }
     }
 }
