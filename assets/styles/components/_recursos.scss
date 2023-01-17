@@ -2,15 +2,15 @@
 @import '../abstract/mixins';
 
 .recursos {
-    text-align: center;
-    padding: 4em 0;
     .recursos__container {
+        text-align: center;
+        padding: 4em 0;
         .recursos__info {
             .recursos__info--titulo {
                 @include titulo(1.5);
             }
             .recursos__info--texto {
-                @include texto();
+                @include texto(0.8);
             }
         }
     .recursos__opcoes {
@@ -24,6 +24,7 @@
             border-top: 1px solid $cor-linha;
             color: $cor-principal;
             font-size: $tamanho-texto * 1;
+            cursor: pointer;
             &:last-of-type {
                 border-bottom: 1px solid $cor-linha;
             }
@@ -45,9 +46,10 @@
                 @include imagem('/assets/images/illustration-features-tab-1.svg', 30vh, 80vw);
             }
         }
-    .recursos__botao {
-        @include botao($cor-fundo, $cor-terciaria);
-    }
+        .recursos__botao {
+            @include botao($cor-fundo, $cor-terciaria);
+            margin-top: 1em;
+        }
     }
     }
 }

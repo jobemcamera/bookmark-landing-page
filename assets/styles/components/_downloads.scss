@@ -1,0 +1,50 @@
+@import '../abstract/variaveis';
+@import '../abstract/mixins';
+
+.downloads {
+    .downloads__container {
+        text-align: center;
+        .downloads__info {
+            .downloads__info--titulo {
+                @include titulo(1.5);
+            }
+            .downloads__info--texto {
+                @include texto(0.8);
+            }
+        }
+    .downloads__cards {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        .downloads__card {
+            border: 1px solid $cor-terciaria;
+            border-radius: 5px;
+            box-shadow: 0 0 5px 0 $cor-secundaria;
+            display: flex;
+            flex-direction: column;
+            padding: 2em;
+            margin: 2em 0;
+            .downloads__card--imagem {
+                width: 40%;
+                margin: 0 auto 1em auto;
+            }
+            .downloads__card--titulo {
+                @include titulo(1);
+            }
+            .downloads__card--texto {
+                @include texto(0.8);
+            }
+            .downloads__card--dots {
+                display: block;
+                padding-bottom: 1em;
+                width: 110%;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .downloads__card--botao {
+                @include botao($cor-fundo, $cor-terciaria);
+            }
+        }
+    }
+    }
+}

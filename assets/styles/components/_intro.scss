@@ -13,10 +13,12 @@
         }
     .intro__info {
         .intro__info--titulo {
-            @include titulo(2);
+            @include titulo(1.8);
+            width: 80%;
+            margin: 0 auto
         }
         .intro__info--texto {
-            @include texto();
+            @include texto(0.8);
         }
         .intro__info--botoes {
             display: flex;

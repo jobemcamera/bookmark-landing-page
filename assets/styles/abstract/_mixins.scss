@@ -8,6 +8,8 @@
     color: $corTexto;
     padding: 1em;
     text-decoration: none;
+    display: inline-block;
+    font-size: $tamanho-texto * 0.9;
 }
 
 @mixin titulo($multiplicador) {
@@ -17,8 +19,9 @@
     color: $cor-principal;
 }
 
-@mixin texto {
-    padding: 2em 3em;
+@mixin texto($multiplicador) {
+    font-size: $tamanho-texto * $multiplicador;
+    padding: 1em 3em;
     line-height: 1.5em;
     color: $cor-secundaria
 }

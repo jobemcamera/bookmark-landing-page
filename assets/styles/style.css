@@ -120,13 +120,16 @@ body {
   padding: 2em 0;
 }
 .intro .intro__container .intro__info .intro__info--titulo {
-  font-size: 36px;
+  font-size: 32.4px;
   font-weight: 500;
   line-height: 1.2em;
   color: hsl(229deg, 31%, 21%);
+  width: 80%;
+  margin: 0 auto;
 }
 .intro .intro__container .intro__info .intro__info--texto {
-  padding: 2em 3em;
+  font-size: 14.4px;
+  padding: 1em 3em;
   line-height: 1.5em;
   color: hsl(229deg, 8%, 60%);
 }
@@ -143,6 +146,8 @@ body {
   color: #ffffff;
   padding: 1em;
   text-decoration: none;
+  display: inline-block;
+  font-size: 16.2px;
 }
 .intro .intro__container .intro__info .intro__info--botoes .intro__info--botao:last-of-type {
   background: #f7f7f7;
@@ -152,9 +157,11 @@ body {
   color: hsl(229deg, 31%, 21%);
   padding: 1em;
   text-decoration: none;
+  display: inline-block;
+  font-size: 16.2px;
 }
 
-.recursos {
+.recursos .recursos__container {
   text-align: center;
   padding: 4em 0;
 }
@@ -165,7 +172,8 @@ body {
   color: hsl(229deg, 31%, 21%);
 }
 .recursos .recursos__container .recursos__info .recursos__info--texto {
-  padding: 2em 3em;
+  font-size: 14.4px;
+  padding: 1em 3em;
   line-height: 1.5em;
   color: hsl(229deg, 8%, 60%);
 }
@@ -181,6 +189,7 @@ body {
   border-top: 1px solid hsla(229deg, 8%, 60%, 0.308);
   color: hsl(229deg, 31%, 21%);
   font-size: 18px;
+  cursor: pointer;
 }
 .recursos .recursos__container .recursos__opcoes .recursos__opcao:last-of-type {
   border-bottom: 1px solid hsla(229deg, 8%, 60%, 0.308);
@@ -210,4 +219,71 @@ body {
   color: #ffffff;
   padding: 1em;
   text-decoration: none;
+  display: inline-block;
+  font-size: 16.2px;
+  margin-top: 1em;
+}
+
+.downloads .downloads__container {
+  text-align: center;
+}
+.downloads .downloads__container .downloads__info .downloads__info--titulo {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.2em;
+  color: hsl(229deg, 31%, 21%);
+}
+.downloads .downloads__container .downloads__info .downloads__info--texto {
+  font-size: 14.4px;
+  padding: 1em 3em;
+  line-height: 1.5em;
+  color: hsl(229deg, 8%, 60%);
+}
+.downloads .downloads__container .downloads__cards {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.downloads .downloads__container .downloads__cards .downloads__card {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 hsl(229deg, 8%, 60%);
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  margin: 2em 0;
+}
+.downloads .downloads__container .downloads__cards .downloads__card .downloads__card--imagem {
+  width: 40%;
+  margin: 0 auto 1em auto;
+}
+.downloads .downloads__container .downloads__cards .downloads__card .downloads__card--titulo {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2em;
+  color: hsl(229deg, 31%, 21%);
+}
+.downloads .downloads__container .downloads__cards .downloads__card .downloads__card--texto {
+  font-size: 14.4px;
+  padding: 1em 3em;
+  line-height: 1.5em;
+  color: hsl(229deg, 8%, 60%);
+}
+.downloads .downloads__container .downloads__cards .downloads__card .downloads__card--dots {
+  display: block;
+  padding-bottom: 1em;
+  width: 110%;
+  text-align: center;
+  margin: 0 auto;
+}
+.downloads .downloads__container .downloads__cards .downloads__card .downloads__card--botao {
+  background: hsl(231deg, 69%, 60%);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px hsl(229deg, 8%, 60%);
+  color: #ffffff;
+  padding: 1em;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16.2px;
 }/*# sourceMappingURL=style.css.map */
