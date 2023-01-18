@@ -406,6 +406,7 @@ body {
   padding: 1em;
   border-radius: 5px;
   border: none;
+  position: relative;
 }
 .contato .contato__container .contato__contato .contato__contato--email::-moz-placeholder {
   color: hsl(229deg, 8%, 60%);
@@ -415,6 +416,36 @@ body {
 }
 .contato .contato__container .contato__contato .contato__contato--email::placeholder {
   color: hsl(229deg, 8%, 60%);
+}
+.contato .contato__container .contato__contato .contato__contato--icone {
+  background-image: url("/assets/images/icon-error.svg");
+  height: 20px;
+  width: 20px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding: 2em 0;
+  position: absolute;
+  right: 12%;
+  padding: 0.5em 0;
+  display: none;
+}
+.contato .contato__container .contato__contato .contato__contato--icone.active {
+  display: block;
+}
+.contato .contato__container .contato__contato .contato__contato--erro {
+  text-align: left;
+  font-size: 10.8px;
+  padding: 0.5em 1em;
+  font-style: italic;
+  background-color: hsl(0deg, 94%, 66%);
+  border-radius: 0 0 5px 5px;
+  color: #ffffff;
+  display: none;
+}
+.contato .contato__container .contato__contato .contato__contato--erro.active {
+  display: block;
 }
 .contato .contato__container .contato__contato .contato__contato--botao {
   background: hsl(0deg, 94%, 66%);
@@ -426,5 +457,6 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 14.4px;
+  cursor: pointer;
   margin-top: 1em;
 }/*# sourceMappingURL=style.css.map */

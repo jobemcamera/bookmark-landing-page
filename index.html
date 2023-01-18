@@ -181,15 +181,18 @@
                 <h2 class="contato__info--titulo">Stay up-to-date with what we're doing</h2>
             </div>
 
-            <div class="contato__contato">
-                <input type="email" class="contato__contato--email" required placeholder="Enter your email adress">
+            <form class="contato__contato">
+                <input type="email" class="contato__contato--email" id="campo-email" placeholder="Enter your email adress" required>
+                <span class="contato__contato--icone"></span>
+                <span class="contato__contato--erro">Whoops, make sure it's an email</span>
                 <button class="contato__contato--botao" id="contato-botao">Contact Us</button>
-            </div>
+            </form>
         </div>
 
     </section>
 
     <script src="assets/js/recursos.js"></script>
     <script src="assets/js/duvidas.js"></script>
+    <script src="assets/js/contato.js"></script>
 </body>
 </html>

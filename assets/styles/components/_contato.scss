@@ -30,13 +30,37 @@
                 padding: 1em;
                 border-radius: 5px;
                 border: none;
+                position: relative;
                 &::placeholder {
                     color: $cor-secundaria;
                 }
             }
+            .contato__contato--icone {
+                @include imagem('/assets/images/icon-error.svg', 20px, 20px);
+                position: absolute;
+                right: 12%;
+                padding: 0.5em 0; 
+                display: none;
+                &.active {
+                    display: block;
+                }
+            }
+            .contato__contato--erro {
+                text-align: left;
+                font-size: $tamanho-texto * 0.6;
+                padding: 0.5em 1em;
+                font-style: italic;
+                background-color: $cor-botao;
+                border-radius: 0 0 5px 5px;
+                color: $cor-terciaria;
+                display: none;
+                &.active {
+                    display: block;
+                }
+            }
             .contato__contato--botao {
                 @include botao ($cor-botao, $cor-terciaria);
-                
+                cursor: pointer;
                 margin-top: 1em;
             }
         }
