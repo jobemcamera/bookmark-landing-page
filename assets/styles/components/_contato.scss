@@ -1,0 +1,44 @@
+@import '../abstract/variaveis';
+@import '../abstract/mixins';
+
+.contato {
+    background-color: $cor-fundo;
+    .contato__container {
+        padding: 2em 0;
+        text-align: center;
+        .contato__info {
+            .contato__info--subtitulo {
+                @include texto(0.6);
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                color: $cor-terciaria;
+            }
+            .contato__info--titulo {
+                @include titulo(1.2);
+                color: $cor-terciaria;
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+        .contato__contato {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 0 auto;
+            padding: 2em 0;
+            .contato__contato--email {
+                padding: 1em;
+                border-radius: 5px;
+                border: none;
+                &::placeholder {
+                    color: $cor-secundaria;
+                }
+            }
+            .contato__contato--botao {
+                @include botao ($cor-botao, $cor-terciaria);
+                
+                margin-top: 1em;
+            }
+        }
+    }
+}
