@@ -4,17 +4,21 @@
 .duvidas {
     .duvidas__container {
         padding: 4em 0;
+        display: flex;
+        flex-direction: column;
         .duvidas__info {
             text-align: center;
             .duvidas__info--titulo {
                 @include titulo(1.5);
+                width: 80%;
+                margin: 0 auto;
             }
             .duvidas__info--texto {
                 @include texto(0.8);
             }
         }
         .duvidas__acordeao {
-            padding: 4em 0;
+            padding: 2em 0;
             width: 80%;
             margin: 0 auto;
             text-align: left;
@@ -27,11 +31,14 @@
                     @include imagem('/assets/images/icon-arrow.svg', 14px, 14px);  
                     content: '';
                     padding: 0;   
-                    float: right;               
+                    float: right;
+                    rotate: (360deg);
+                    transition: 0.5s;               
                 }
                 &.active::after {
-                   
+                    rotate: (180deg);
                     transition: 0.5s;
+                    filter: sepia(1);
                 }
             }
             .duvidas__acordeao--paleta {
@@ -43,6 +50,10 @@
                     padding: 1em 0;
                 }
             }
+        }
+        .duvidas__botao {
+            @include botao($cor-fundo, $cor-terciaria);
+            margin: 1em auto;
         }
     }
 }

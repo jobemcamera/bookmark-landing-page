@@ -1,7 +1,7 @@
 const acordeao = document.querySelectorAll('.duvidas__acordeao--titulo')
 
 
-acordeao.forEach((element, index) => {
+acordeao.forEach((element) => {
     element.onclick = function () {
         element.classList.toggle('active')
         var panel = this.nextElementSibling
