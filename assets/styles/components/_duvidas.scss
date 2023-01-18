@@ -1,0 +1,48 @@
+@import '../abstract/variaveis';
+@import '../abstract/mixins';
+
+.duvidas {
+    .duvidas__container {
+        padding: 4em 0;
+        .duvidas__info {
+            text-align: center;
+            .duvidas__info--titulo {
+                @include titulo(1.5);
+            }
+            .duvidas__info--texto {
+                @include texto(0.8);
+            }
+        }
+        .duvidas__acordeao {
+            padding: 4em 0;
+            width: 80%;
+            margin: 0 auto;
+            text-align: left;
+            .duvidas__acordeao--titulo {
+                @include titulo(0.8);
+                border-bottom: 1px solid $cor-linha;
+                padding: 1em 0;
+                transition: 0.5s;
+                &::after {
+                    @include imagem('/assets/images/icon-arrow.svg', 14px, 14px);  
+                    content: '';
+                    padding: 0;   
+                    float: right;               
+                }
+                &.active::after {
+                   
+                    transition: 0.5s;
+                }
+            }
+            .duvidas__acordeao--paleta {
+                overflow: hidden;
+                transition: 0.5s;
+                max-height: 0;
+                .duvidas__acordeao--texto {
+                    @include texto(0.8);
+                    padding: 1em 0;
+                }
+            }
+        }
+    }
+}

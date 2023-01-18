@@ -286,4 +286,66 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16.2px;
+}
+
+.duvidas .duvidas__container {
+  padding: 4em 0;
+}
+.duvidas .duvidas__container .duvidas__info {
+  text-align: center;
+}
+.duvidas .duvidas__container .duvidas__info .duvidas__info--titulo {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.2em;
+  color: hsl(229deg, 31%, 21%);
+}
+.duvidas .duvidas__container .duvidas__info .duvidas__info--texto {
+  font-size: 14.4px;
+  padding: 1em 3em;
+  line-height: 1.5em;
+  color: hsl(229deg, 8%, 60%);
+}
+.duvidas .duvidas__container .duvidas__acordeao {
+  padding: 4em 0;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+.duvidas .duvidas__container .duvidas__acordeao .duvidas__acordeao--titulo {
+  font-size: 14.4px;
+  font-weight: 500;
+  line-height: 1.2em;
+  color: hsl(229deg, 31%, 21%);
+  border-bottom: 1px solid hsla(229deg, 8%, 60%, 0.308);
+  padding: 1em 0;
+  transition: 0.5s;
+}
+.duvidas .duvidas__container .duvidas__acordeao .duvidas__acordeao--titulo::after {
+  background-image: url("/assets/images/icon-arrow.svg");
+  height: 14px;
+  width: 14px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding: 2em 0;
+  content: "";
+  padding: 0;
+  float: right;
+}
+.duvidas .duvidas__container .duvidas__acordeao .duvidas__acordeao--titulo.active::after {
+  transition: 0.5s;
+}
+.duvidas .duvidas__container .duvidas__acordeao .duvidas__acordeao--paleta {
+  overflow: hidden;
+  transition: 0.5s;
+  max-height: 0;
+}
+.duvidas .duvidas__container .duvidas__acordeao .duvidas__acordeao--paleta .duvidas__acordeao--texto {
+  font-size: 14.4px;
+  padding: 1em 3em;
+  line-height: 1.5em;
+  color: hsl(229deg, 8%, 60%);
+  padding: 1em 0;
 }/*# sourceMappingURL=style.css.map */
