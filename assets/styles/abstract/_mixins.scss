@@ -9,7 +9,7 @@
     padding: 1em;
     text-decoration: none;
     display: inline-block;
-    font-size: $tamanho-texto * 0.8;
+    font-size: $tamanho-texto * 0.7;
 }
 
 @mixin titulo($multiplicador) {
@@ -35,4 +35,10 @@
     background-repeat: no-repeat;
     display: inline-block;
     padding: 2em 0;
+}
+
+@mixin responsivo($tamanho) {
+    @if $tamanho == desktop {
+        @media screen and (min-width: 1024px) { @content; }
+    }
 }
