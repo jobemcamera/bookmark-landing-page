@@ -1,0 +1,49 @@
+@import '../abstract/variaveis';
+@import '../abstract/mixins';
+
+.rodape {
+    .rodape__container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: $cor-principal;
+        padding: 2em 0;
+        .rodape__logo {
+            width: 35%;
+            margin: 0 auto;
+            filter: brightness(10);
+        }
+        .nav {
+            padding: 1em 0;
+            .nav__lista {
+                .nav__item {
+                    padding: 1em 0;
+                    .nav__link {
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        color: white;
+                        font-size: $tamanho-texto * 0.8;
+                    }
+                }
+            }
+        }
+        .rodape__redes {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 50%;
+            margin: 0 auto;
+            .rodape__rede {
+                &:first-of-type {
+                    @include imagem('/assets/images/icon-facebook.svg', 24px, 24px);
+                    padding: 0;
+                }
+                &:last-of-type {
+                    @include imagem('/assets/images/icon-twitter.svg', 24px, 24px);
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
