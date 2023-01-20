@@ -2,7 +2,7 @@
 
 @mixin botao($corFundo, $corTexto) {
     background: $corFundo;
-    border: none;
+    border: 2px solid $corFundo;
     border-radius: 5px;
     box-shadow: 2px 2px 2px $cor-secundaria;
     color: $corTexto;
@@ -41,4 +41,14 @@
     @if $tamanho == desktop {
         @media screen and (min-width: 1024px) { @content; }
     }
+}
+
+@mixin textoHover() {
+    color: $cor-botao;
+}
+
+@mixin botaoHover($corTexto, $corFundo, $corBorda) {
+    color: $corTexto;
+    background-color: $corFundo;
+    border-color: $corBorda;
 }

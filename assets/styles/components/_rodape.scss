@@ -44,6 +44,10 @@
                         letter-spacing: 2px;
                         color: white;
                         font-size: $tamanho-texto * 0.8;
+                        transition: 0.2s;
+                        &:hover {
+                            @include textoHover();
+                        }
                     }
                 }
             }
@@ -58,10 +62,12 @@
                 &:first-of-type {
                     @include imagem('/assets/images/icon-facebook.svg', 24px, 24px);
                     padding: 0;
+                    cursor: pointer;
                 }
                 &:last-of-type {
                     @include imagem('/assets/images/icon-twitter.svg', 24px, 24px);
                     padding: 0;
+                    cursor: pointer;
                 }
             }
         }

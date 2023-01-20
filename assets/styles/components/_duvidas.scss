@@ -60,6 +60,9 @@
                     transition: 0.5s;
                     filter: sepia(1);
                 }
+                &:hover {
+                    @include textoHover();
+                }
             }
             .duvidas__acordeao--paleta {
                 overflow: hidden;
@@ -74,6 +77,10 @@
         .duvidas__botao {
             @include botao($cor-fundo, $cor-terciaria);
             margin: 1em auto;
+            transition: 0.2s;
+            &:hover {
+                @include botaoHover($cor-fundo, $cor-terciaria, $cor-fundo);
+            }
         }
     }
 }

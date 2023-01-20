@@ -74,6 +74,10 @@
             }
             .downloads__card--botao {
                 @include botao($cor-fundo, $cor-terciaria);
+                transition: 0.2s;
+                &:hover {
+                @include botaoHover($cor-fundo, $cor-terciaria, $cor-fundo);
+                }
             }
         }
     }
