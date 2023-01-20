@@ -664,20 +664,44 @@ body {
   }
 }
 
+.rodape {
+  background-color: hsl(229deg, 31%, 21%);
+}
 .rodape .rodape__container {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: hsl(229deg, 31%, 21%);
   padding: 2em 0;
+}
+@media screen and (min-width: 1024px) {
+  .rodape .rodape__container {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 1em 0;
+    align-items: center;
+  }
 }
 .rodape .rodape__container .rodape__logo {
   width: 35%;
   margin: 0 auto;
   filter: brightness(10);
 }
+@media screen and (min-width: 1024px) {
+  .rodape .rodape__container .rodape__logo {
+    width: 50%;
+  }
+}
 .rodape .rodape__container .nav {
   padding: 1em 0;
+}
+@media screen and (min-width: 1024px) {
+  .rodape .rodape__container .nav .nav__lista {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
 }
 .rodape .rodape__container .nav .nav__lista .nav__item {
   padding: 1em 0;

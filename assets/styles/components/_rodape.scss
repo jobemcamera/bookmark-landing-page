@@ -2,20 +2,40 @@
 @import '../abstract/mixins';
 
 .rodape {
+    background-color: $cor-principal;
     .rodape__container {
         display: flex;
         flex-direction: column;
         text-align: center;
-        background-color: $cor-principal;
         padding: 2em 0;
+
+        @media screen and (min-width: 1024px) {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            padding: 1em 0;
+            align-items: center;
+        }
+        
         .rodape__logo {
             width: 35%;
             margin: 0 auto;
             filter: brightness(10);
+
+            @media screen and (min-width: 1024px) {
+                width: 50%;
+            }
         }
         .nav {
             padding: 1em 0;
             .nav__lista {
+                @media screen and (min-width: 1024px) {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1em;
+                    //margin-right: 10em;
+                }
                 .nav__item {
                     padding: 1em 0;
                     .nav__link {
