@@ -8,6 +8,7 @@ botao.addEventListener('click', function() {
     if (!formulario.reportValidity()) {
         icone.classList.add('active')
         erro.classList.add('active')
+        botao.style.marginBottom = '20px'
     } else {
         icone.classList.remove('active')
         erro.classList.remove('active')

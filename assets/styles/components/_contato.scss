@@ -6,6 +6,11 @@
     .contato__container {
         padding: 2em 0;
         text-align: center;
+
+        @media screen and (min-width: 1024px) {
+            max-width: 500px;
+            margin: 0 auto;
+        }
         .contato__info {
             .contato__info--subtitulo {
                 @include texto(0.6);
@@ -18,6 +23,10 @@
                 color: $cor-terciaria;
                 width: 80%;
                 margin: 0 auto;
+                @include responsivo(desktop) {
+                    max-width: 300px;
+                    padding-top: 1em;
+                }
             }
         }
         .contato__contato {
@@ -26,42 +35,66 @@
             width: 80%;
             margin: 0 auto;
             padding: 2em 0;
-            .contato__contato--email {
-                padding: 1em;
-                border-radius: 5px;
-                border: none;
-                position: relative;
-                &::placeholder {
-                    color: $cor-secundaria;
-                }
+
+            @media screen and (min-width: 1024px) {
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 1em;
             }
-            .contato__contato--icone {
-                @include imagem('/assets/images/icon-error.svg', 20px, 20px);
-                position: absolute;
-                right: 12%;
-                padding: 0.5em 0; 
-                display: none;
-                &.active {
-                    display: block;
+            .contato__email {
+                display: flex;
+                flex-direction: column;
+                @media screen and (min-width: 1024px) {
+                    position: relative;
                 }
-            }
-            .contato__contato--erro {
-                text-align: left;
-                font-size: $tamanho-texto * 0.6;
-                padding: 0.5em 1em;
-                font-style: italic;
-                background-color: $cor-botao;
-                border-radius: 0 0 5px 5px;
-                color: $cor-terciaria;
-                display: none;
-                &.active {
-                    display: block;
+                .contato__contato--email {
+                    padding: 1em;
+                    border-radius: 5px;
+                    border: none;
+                    position: relative;
+                    &::placeholder {
+                        color: $cor-secundaria;
+                    }
+                }
+                .contato__contato--icone {
+                    @include imagem('/assets/images/icon-error.svg', 20px, 20px);
+                    position: absolute;
+                    right: 12%;
+                    padding: 0.5em 0; 
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
+                    
+                    @media screen and (min-width: 1024px) {
+                        right: 5%;
+                        position: absolute;
+                        bottom: 38%;
+                    }
+                }
+                .contato__contato--erro {
+                    text-align: left;
+                    font-size: $tamanho-texto * 0.6;
+                    padding: 0.5em 1em;
+                    font-style: italic;
+                    background-color: $cor-botao;
+                    border-radius: 0 0 5px 5px;
+                    color: $cor-terciaria;
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
                 }
             }
             .contato__contato--botao {
                 @include botao ($cor-botao, $cor-terciaria);
                 cursor: pointer;
                 margin-top: 1em;
+
+                @media screen and (min-width: 1024px) {
+                    margin: 0;
+                }
             }
         }
     }

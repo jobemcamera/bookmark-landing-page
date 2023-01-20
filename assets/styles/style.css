@@ -539,6 +539,12 @@ body {
   padding: 2em 0;
   text-align: center;
 }
+@media screen and (min-width: 1024px) {
+  .contato .contato__container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
 .contato .contato__container .contato__info .contato__info--subtitulo {
   font-size: 10.8px;
   padding: 1em 3em;
@@ -557,6 +563,12 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+@media screen and (min-width: 1024px) {
+  .contato .contato__container .contato__info .contato__info--titulo {
+    max-width: 300px;
+    padding-top: 1em;
+  }
+}
 .contato .contato__container .contato__contato {
   display: flex;
   flex-direction: column;
@@ -564,22 +576,39 @@ body {
   margin: 0 auto;
   padding: 2em 0;
 }
-.contato .contato__container .contato__contato .contato__contato--email {
+@media screen and (min-width: 1024px) {
+  .contato .contato__container .contato__contato {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+}
+.contato .contato__container .contato__contato .contato__email {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .contato .contato__container .contato__contato .contato__email {
+    position: relative;
+  }
+}
+.contato .contato__container .contato__contato .contato__email .contato__contato--email {
   padding: 1em;
   border-radius: 5px;
   border: none;
   position: relative;
 }
-.contato .contato__container .contato__contato .contato__contato--email::-moz-placeholder {
+.contato .contato__container .contato__contato .contato__email .contato__contato--email::-moz-placeholder {
   color: hsl(229deg, 8%, 60%);
 }
-.contato .contato__container .contato__contato .contato__contato--email:-ms-input-placeholder {
+.contato .contato__container .contato__contato .contato__email .contato__contato--email:-ms-input-placeholder {
   color: hsl(229deg, 8%, 60%);
 }
-.contato .contato__container .contato__contato .contato__contato--email::placeholder {
+.contato .contato__container .contato__contato .contato__email .contato__contato--email::placeholder {
   color: hsl(229deg, 8%, 60%);
 }
-.contato .contato__container .contato__contato .contato__contato--icone {
+.contato .contato__container .contato__contato .contato__email .contato__contato--icone {
   background-image: url("/assets/images/icon-error.svg");
   height: 20px;
   width: 20px;
@@ -593,10 +622,17 @@ body {
   padding: 0.5em 0;
   display: none;
 }
-.contato .contato__container .contato__contato .contato__contato--icone.active {
+.contato .contato__container .contato__contato .contato__email .contato__contato--icone.active {
   display: block;
 }
-.contato .contato__container .contato__contato .contato__contato--erro {
+@media screen and (min-width: 1024px) {
+  .contato .contato__container .contato__contato .contato__email .contato__contato--icone {
+    right: 5%;
+    position: absolute;
+    bottom: 38%;
+  }
+}
+.contato .contato__container .contato__contato .contato__email .contato__contato--erro {
   text-align: left;
   font-size: 10.8px;
   padding: 0.5em 1em;
@@ -606,7 +642,7 @@ body {
   color: #ffffff;
   display: none;
 }
-.contato .contato__container .contato__contato .contato__contato--erro.active {
+.contato .contato__container .contato__contato .contato__email .contato__contato--erro.active {
   display: block;
 }
 .contato .contato__container .contato__contato .contato__contato--botao {
@@ -621,6 +657,11 @@ body {
   font-size: 12.6px;
   cursor: pointer;
   margin-top: 1em;
+}
+@media screen and (min-width: 1024px) {
+  .contato .contato__container .contato__contato .contato__contato--botao {
+    margin: 0;
+  }
 }
 
 .rodape .rodape__container {
