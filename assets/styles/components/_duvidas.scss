@@ -6,6 +6,12 @@
         padding: 4em 0;
         display: flex;
         flex-direction: column;
+
+        @media screen and (min-width: 1024px) {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 4em 2em;
+        }
         .duvidas__info {
             text-align: center;
             .duvidas__info--titulo {
@@ -15,6 +21,10 @@
             }
             .duvidas__info--texto {
                 @include texto(0.8);
+                @include responsivo(desktop) {
+                    max-width: 420px;
+                    margin: 0 auto;
+                }
             }
         }
         .duvidas__acordeao {
@@ -22,11 +32,20 @@
             width: 80%;
             margin: 0 auto;
             text-align: left;
+
+            @media screen and (min-width: 1024px) {
+                max-width: 420px;
+                margin: 0 auto;
+            }
+
             .duvidas__acordeao--titulo {
                 @include titulo(0.8);
                 border-bottom: 1px solid $cor-linha;
                 padding: 1em 0;
                 transition: 0.5s;
+                &:first-of-type {
+                    border-top: 1px solid $cor-linha;
+                }
                 &::after {
                     @include imagem('/assets/images/icon-arrow.svg', 14px, 14px);  
                     content: '';

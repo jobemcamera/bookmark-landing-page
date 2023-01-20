@@ -432,6 +432,13 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 1024px) {
+  .duvidas .duvidas__container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 4em 2em;
+  }
+}
 .duvidas .duvidas__container .duvidas__info {
   text-align: center;
 }
@@ -449,11 +456,23 @@ body {
   line-height: 1.5em;
   color: hsl(229deg, 8%, 60%);
 }
+@media screen and (min-width: 1024px) {
+  .duvidas .duvidas__container .duvidas__info .duvidas__info--texto {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}
 .duvidas .duvidas__container .duvidas__acordeao {
   padding: 2em 0;
   width: 80%;
   margin: 0 auto;
   text-align: left;
+}
+@media screen and (min-width: 1024px) {
+  .duvidas .duvidas__container .duvidas__acordeao {
+    max-width: 420px;
+    margin: 0 auto;
+  }
 }
 .duvidas .duvidas__container .duvidas__acordeao .duvidas__acordeao--titulo {
   font-size: 14.4px;
@@ -463,6 +482,9 @@ body {
   border-bottom: 1px solid hsla(229deg, 8%, 60%, 0.308);
   padding: 1em 0;
   transition: 0.5s;
+}
+.duvidas .duvidas__container .duvidas__acordeao .duvidas__acordeao--titulo:first-of-type {
+  border-top: 1px solid hsla(229deg, 8%, 60%, 0.308);
 }
 .duvidas .duvidas__container .duvidas__acordeao .duvidas__acordeao--titulo::after {
   background-image: url("/assets/images/icon-arrow.svg");
