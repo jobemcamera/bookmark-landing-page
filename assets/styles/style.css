@@ -482,6 +482,7 @@ body {
   border-bottom: 1px solid hsla(229deg, 8%, 60%, 0.308);
   padding: 1em 0;
   transition: 0.5s;
+  cursor: pointer;
 }
 .duvidas .duvidas__container .duvidas__acordeao .duvidas__acordeao--titulo:first-of-type {
   border-top: 1px solid hsla(229deg, 8%, 60%, 0.308);
