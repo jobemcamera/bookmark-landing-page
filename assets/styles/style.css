@@ -335,6 +335,13 @@ body {
 .downloads .downloads__container {
   text-align: center;
 }
+@media screen and (min-width: 1024px) {
+  .downloads .downloads__container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 6em 2em;
+  }
+}
 .downloads .downloads__container .downloads__info .downloads__info--titulo {
   font-size: 27px;
   font-weight: 500;
@@ -347,10 +354,24 @@ body {
   line-height: 1.5em;
   color: hsl(229deg, 8%, 60%);
 }
+@media screen and (min-width: 1024px) {
+  .downloads .downloads__container .downloads__info .downloads__info--texto {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
 .downloads .downloads__container .downloads__cards {
   text-align: center;
   width: 80%;
   margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .downloads .downloads__container .downloads__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    width: 100%;
+  }
 }
 .downloads .downloads__container .downloads__cards .downloads__card {
   border: 1px solid #ffffff;
@@ -360,6 +381,16 @@ body {
   flex-direction: column;
   padding: 2em;
   margin: 2em 0;
+}
+@media screen and (min-width: 1024px) {
+  .downloads .downloads__container .downloads__cards .downloads__card:nth-last-of-type(2) {
+    position: relative;
+    top: 4em;
+  }
+  .downloads .downloads__container .downloads__cards .downloads__card:last-of-type {
+    position: relative;
+    top: 8em;
+  }
 }
 .downloads .downloads__container .downloads__cards .downloads__card .downloads__card--imagem {
   width: 40%;
@@ -380,7 +411,7 @@ body {
 .downloads .downloads__container .downloads__cards .downloads__card .downloads__card--dots {
   display: block;
   padding-bottom: 1em;
-  width: 110%;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
 }

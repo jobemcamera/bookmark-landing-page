@@ -4,18 +4,37 @@
 .downloads {
     .downloads__container {
         text-align: center;
+
+        @media screen and (min-width: 1024px) {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 6em 2em;
+        }
+
         .downloads__info {
             .downloads__info--titulo {
                 @include titulo(1.5);
             }
             .downloads__info--texto {
                 @include texto(0.8);
+                @include responsivo(desktop) {
+                    width: 450px;
+                    margin: 0 auto;
+                }
             }
         }
     .downloads__cards {
         text-align: center;
         width: 80%;
         margin: 0 auto;
+
+        @media screen and (min-width: 1024px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2em;
+            width: 100%;
+
+        }
         .downloads__card {
             border: 1px solid $cor-terciaria;
             border-radius: 5px;
@@ -24,6 +43,18 @@
             flex-direction: column;
             padding: 2em;
             margin: 2em 0;
+
+            @media screen and (min-width: 1024px) {
+                &:nth-last-of-type(2) {
+                    position: relative;
+                    top: 4em;
+                }
+                &:last-of-type {
+                    position: relative;
+                    top: 8em;
+                }
+            }
+
             .downloads__card--imagem {
                 width: 40%;
                 margin: 0 auto 1em auto;
@@ -37,7 +68,7 @@
             .downloads__card--dots {
                 display: block;
                 padding-bottom: 1em;
-                width: 110%;
+                width: 100%;
                 text-align: center;
                 margin: 0 auto;
             }
