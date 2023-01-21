@@ -101,13 +101,13 @@
                         color: $cor-terciaria;
                         font-weight: 400;
                         transition: 0.2s;
-                        &:hover {
-                            @include textoHover();
-                        }
 
                         @media screen and (min-width: 1024px) {
                             color: $cor-principal;
                             font-size: $tamanho-texto * 1;
+                            &:hover {
+                                @include textoHover();
+                            }
                         }
                     }
                     .login {
@@ -118,14 +118,14 @@
                         align-items: center;
                         justify-content: center;
                         transition: 0.2s;
-                        &:hover {
-                            @include botaoHover($cor-botao, $cor-terciaria, $cor-botao);
-                        }
 
                         @media screen and (min-width: 1024px) {
                             @include botao ($cor-botao, $cor-terciaria);
                             padding: 1em 2em;
                             font-size: $tamanho-texto * 0.7;
+                            &:hover {
+                                @include botaoHover($cor-botao, $cor-terciaria, $cor-botao);
+                            }
                         }
                     }
                 }

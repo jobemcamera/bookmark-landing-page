@@ -78,8 +78,11 @@
             @include botao($cor-fundo, $cor-terciaria);
             margin: 1em auto;
             transition: 0.2s;
-            &:hover {
-                @include botaoHover($cor-fundo, $cor-terciaria, $cor-fundo);
+
+            @media screen and (min-width: 1024px) {
+                &:hover {
+                    @include botaoHover($cor-fundo, $cor-terciaria, $cor-fundo);
+                }
             }
         }
     }

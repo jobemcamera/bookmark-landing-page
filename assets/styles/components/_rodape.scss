@@ -45,8 +45,11 @@
                         color: white;
                         font-size: $tamanho-texto * 0.8;
                         transition: 0.2s;
-                        &:hover {
-                            @include textoHover();
+
+                        @media screen and (min-width: 1024px) {
+                            &:hover {
+                                @include textoHover();
+                            }
                         }
                     }
                 }

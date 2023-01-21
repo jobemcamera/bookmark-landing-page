@@ -71,12 +71,12 @@
                 }
                 &:last-of-type {
                     @include botao($cor-quartenaria, $cor-principal);
-                    &:hover {
-                        @include botaoHover($cor-principal, $cor-terciaria, $cor-principal)
-                    }
-
+                    
                     @media screen and (min-width: 1024px) {
                         margin-left: 1em;
+                        &:hover {
+                            @include botaoHover($cor-principal, $cor-terciaria, $cor-principal)
+                        }
                     }
                 }
             }

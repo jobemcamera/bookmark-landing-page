@@ -92,12 +92,12 @@
                 cursor: pointer;
                 margin-top: 1em;
                 transition: 0.2s;
-                &:hover {
-                    @include botaoHover($cor-botao, $cor-terciaria, $cor-botao);
-                }
-
+                
                 @media screen and (min-width: 1024px) {
                     margin: 0;
+                    &:hover {
+                        @include botaoHover($cor-botao, $cor-terciaria, $cor-botao);
+                    }
                 }
             }
         }
